@@ -2,8 +2,6 @@
 
 /* mixins, variables, etc. */
 
-$grayMediumLight: #eaeaea;
-
 /* universal */
 
 html {
@@ -18,22 +16,22 @@ body {
   background-attachment: fixed;
 
 	/* IE10 Consumer Preview */ 
-	background-image: -ms-linear-gradient(top, #BFBFBF 0%, #727F85 100%);
+	background-image: -ms-linear-gradient(top, #E6E6E6 0%, #C3CDD4 100%);
 
 	/* Mozilla Firefox */ 
-	background-image: -moz-linear-gradient(top, #BFBFBF 0%, #727F85 100%);
+	background-image: -moz-linear-gradient(top, #E6E6E6 0%, #C3CDD4 100%);
 
 	/* Opera */ 
-	background-image: -o-linear-gradient(top, #BFBFBF 0%, #727F85 100%);
+	background-image: -o-linear-gradient(top, #E6E6E6 0%, #C3CDD4 100%);
 
 	/* Webkit (Safari/Chrome 10) */ 
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #BFBFBF), color-stop(1, #727F85));
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E6E6E6), color-stop(1, #C3CDD4));
 
 	/* Webkit (Chrome 11+) */ 
-	background-image: -webkit-linear-gradient(top, #BFBFBF 0%, #727F85 100%);
+	background-image: -webkit-linear-gradient(top, #E6E6E6 0%, #C3CDD4 100%);
 
 	/* W3C Markup, IE10 Release Preview */ 
-	background-image: linear-gradient(to bottom, #BFBFBF 0%, #727F85 100%);
+	background-image: linear-gradient(to bottom, #E6E6E6 0%, #C3CDD4 100%);
 }
 
 section {
@@ -44,116 +42,88 @@ textarea {
   resize: vertical;
 }
 
-.center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
-}
-
 img {
-  color: white
+  padding: 5px;
+
+	&#linked {
+    margin-bottom: 6px;
+	}
 }
 
 /* typography */
 
 
 h1 {
-	font-family: 'Oxygen', sans-serif; 
-	font-size: 35px;
+	font-family: 'Asap', sans-serif;
+	font-size: 30px;
 	text-align: center;
-	letter-spacing: 10px;
-	color: #F8F8F8;
-	text-shadow: 2px 2px #929292;
+	letter-spacing: 12px;
+	color: #525151;
 }
 
 p {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Asap', sans-serif;
 	font-size: 20px;
 	text-align: center;
-	letter-spacing: 3px;
-	color: #F8F8F8;
+	letter-spacing: 5px;
+	color: #525151;
 	text-shadow: 0px 0px #707070;
 }
 
 a {
     font-weight: bold;
-    color: #F8F8F8;
-    &#snap:hover {
+	color: #333333;
+    transition: all 0.75s cubic-bezier(1, 0, 1, 1);
+    -moz-transition: all 0.75s cubic-bezier(1, 0, 1, 1);
+    -webkit-transition: all 0.75s cubic-bezier(1, 0, 1, 1);
+
+    &#snap {
       color: #E3701A;
-      text-decoration: none;
-    }
-	&#mail:hover {
-	     color: rgb(201, 44, 25);
-	     text-decoration: none;
+
+		&#snap:hover {
+		  text-shadow: 0 0 100px #FFFFFF;
+		  transform: scale(1.05);
+	      text-decoration: none;
+	   	}
 	}
-	&#tweet:hover {
-	     color: #4099FF;
-	     text-decoration: none;
-    }
-	&#link:hover {
-	     color: #4498c2;
-	     text-decoration: none;
-    }
-	&#fb:hover {
-	     color: #3B5998;
-	     text-decoration: none;
-    }
+}
+	
+a#email {
+	color: #C31E0D;
 }
 
-		/* .container {
-			background-color: #A7A7A7;
-			padding: 10px;
-			width: 600px;
-			background-color: rgba(213, 213, 213, .2);
-		}
-
-		.round {
-			border-radius: 10px;
-			-webkit-border-radius: 10px;
-			-moz-border-radius: 10px;
-		} */
-
-/* header */
-
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
-  &:hover {
-    color: white;
-    text-decoration: none;
-  }
+a#email:hover {
+	text-shadow: 0 0 100px #FFFFFF;
+	transform: scale(1.05);
+	text-decoration: none;
 }
 
-/* footer */
+a#tweet {
+	color: #33CCFF;
+}
 
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
-  a {
-    color: $gray;
-    &:hover { 
-      color: $grayDarker;
-    }
-  }  
-  small { 
-    float: left; 
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 10px;
-    }
-  }
+a#tweet:hover{
+   	text-shadow: 0 0 100px #FFFFFF;
+	transform: scale(1.05);
+	text-decoration: none;
+}
+
+a#linked {
+	color: #4875B4;
+}
+
+a#linked:hover {
+    text-shadow: 0 0 100px #FFFFFF;
+    transform: scale(1.05);
+	text-decoration: none;
+}
+
+a#fb {
+	color: #3B5998;
+}
+
+a#fb:hover {
+	text-shadow: 0 0 100px #FFFFFF;
+	transform: scale(1.05);
+	text-decoration: none;
 }
