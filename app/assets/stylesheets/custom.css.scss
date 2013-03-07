@@ -2,6 +2,9 @@
 
 /* mixins, variables, etc. */
 
+$shadow: #FFFFFF;
+$letters: #000000;
+
 /* universal */
 
 html {
@@ -15,23 +18,23 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-	/* IE10 Consumer Preview */ 
-	background-image: -ms-linear-gradient(top, #E6E6E6 0%, #C3CDD4 100%);
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #B5EFFF 0%, #B5EFFF 100%);
 
-	/* Mozilla Firefox */ 
-	background-image: -moz-linear-gradient(top, #E6E6E6 0%, #C3CDD4 100%);
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #B5EFFF 0%, #B5EFFF 100%);
 
-	/* Opera */ 
-	background-image: -o-linear-gradient(top, #E6E6E6 0%, #C3CDD4 100%);
+/* Opera */ 
+background-image: -o-linear-gradient(top, #B5EFFF 0%, #B5EFFF 100%);
 
-	/* Webkit (Safari/Chrome 10) */ 
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E6E6E6), color-stop(1, #C3CDD4));
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #B5EFFF), color-stop(1, #B5EFFF));
 
-	/* Webkit (Chrome 11+) */ 
-	background-image: -webkit-linear-gradient(top, #E6E6E6 0%, #C3CDD4 100%);
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #B5EFFF 0%, #B5EFFF 100%);
 
-	/* W3C Markup, IE10 Release Preview */ 
-	background-image: linear-gradient(to bottom, #E6E6E6 0%, #C3CDD4 100%);
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #B5EFFF 0%, #B5EFFF 100%);
 }
 
 section {
@@ -45,6 +48,7 @@ textarea {
 hr {
   width: 80%;
   margin: 15px auto;
+  border-color: $letters;
 }
 
 img {
@@ -59,24 +63,22 @@ img {
 
 
 h1 {
-	font-family: 'Asap', sans-serif;
-	font-size: 30px;
+	font-family: 'Lato', sans-serif;
+	font-size: 40px;
+	font-weight: 400;
 	text-align: center;
-	letter-spacing: 12px;
-	text-shadow:
-	-1px -1px 0 #F0EFEF,
-	1px -1px 0 #F0EFEF,
-	-1px 1px 0 #F0EFEF,
-	1px 1px 0 #F0EFEF;
-	color: #525151;
+	letter-spacing: 10px;
+	color: $letters;
 }
 
 p {
-    font-family: 'Asap', sans-serif;
-	font-size: 20px;
+    font-family: 'Lato', sans-serif;
+	font-size: 35px;
+	font-weight: 300;
 	text-align: center;
-	letter-spacing: 5px;
-	color: #525151;
+	letter-spacing: -1px;
+	padding: 10px;
+	color: $letters;
 }
 
 a {
@@ -92,10 +94,10 @@ a {
 
 		&#snap:hover {
 			text-shadow:
-			-1px -1px 0 #F0EFEF,
-			1px -1px 0 #F0EFEF,
-			-1px 1px 0 #F0EFEF,
-			1px 1px 0 #F0EFEF;
+			-1px -1px 0 $shadow,
+			1px -1px 0 $shadow,
+			-1px 1px 0 $shadow,
+			1px 1px 0 $shadow;
 			text-decoration: none;
 	   	}
 	}
@@ -107,10 +109,10 @@ a#email {
 
 a#email:hover {
 	text-shadow:
-	-1px -1px 0 #F0EFEF,
-	1px -1px 0 #F0EFEF,
-	-1px 1px 0 #F0EFEF,
-	1px 1px 0 #F0EFEF;
+	-1px -1px 0 $shadow,
+	1px -1px 0 $shadow,
+	-1px 1px 0 $shadow,
+	1px 1px 0 $shadow;
 	text-decoration: none;
 }
 
@@ -120,10 +122,10 @@ a#tweet {
 
 a#tweet:hover{
    	text-shadow:
-	-1px -1px 0 #F0EFEF,
-	1px -1px 0 #F0EFEF,
-	-1px 1px 0 #F0EFEF,
-	1px 1px 0 #F0EFEF;
+	-1px -1px 0 $shadow,
+	1px -1px 0 $shadow,
+	-1px 1px 0 $shadow,
+	1px 1px 0 $shadow;
 	text-decoration: none;
 }
 
@@ -133,10 +135,10 @@ a#linked {
 
 a#linked:hover {
     text-shadow:
-	-1px -1px 0 #F0EFEF,
-	1px -1px 0 #F0EFEF,
-	-1px 1px 0 #F0EFEF,
-	1px 1px 0 #F0EFEF;
+	-1px -1px 0 $shadow,
+	1px -1px 0 $shadow,
+	-1px 1px 0 $shadow,
+	1px 1px 0 $shadow;
 	text-decoration: none;
 }
 
@@ -146,9 +148,9 @@ a#fb {
 
 a#fb:hover {
 	text-shadow:
-	-1px -1px 0 #F0EFEF,
-	1px -1px 0 #F0EFEF,
-	-1px 1px 0 #F0EFEF,
-	1px 1px 0 #F0EFEF;
+	-1px -1px 0 $shadow,
+	1px -1px 0 $shadow,
+	-1px 1px 0 $shadow,
+	1px 1px 0 $shadow;
 	text-decoration: none;
 }
